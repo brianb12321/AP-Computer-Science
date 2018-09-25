@@ -16,7 +16,7 @@ public class TimeConverter2 {
         System.out.print("Enter seconds to convert: ");
         int seconds = scan.nextInt();
         int hours = seconds / 60 / 60;
-        int minutes = hours * 60;
+        int minutes = seconds % 3600 / 60;
         System.out.println("Hours: " + hours);
         System.out.println("Minutes: " + minutes);
     }
