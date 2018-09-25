@@ -14,10 +14,11 @@ public class TimeConverter {
     public void doStuff() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter hour to convert to seconds: ");
-        int hour = scan.nextInt();
-        int minutes = hour * 60;
-        int seconds = minutes * 60;
-        System.out.println(minutes + " minutes");
-        System.out.println(seconds + " seconds");
+        int hours = scan.nextInt() * 60 * 60;
+        System.out.print("Enter minutes to convert to seconds: ");
+        int minutes = scan.nextInt() * 60;
+        System.out.print("Enter seconds to convert to seconds: ");
+        int seconds = scan.nextInt();
+        System.out.println((hours + minutes + seconds) + " seconds");
     }
 }
