@@ -10,18 +10,22 @@
 
 package chapter.part2;
 
+import java.util.Scanner;
 /**
  *
  * @author briajbarn42
  */
 public class Arithmetic {
     public void doStuff() {
-        int num1 = 27;
-        int num2 = 9;
-        int num3 = 10;
-        int sum = num1 + num2 + num3;
-        System.out.println(sum);
-        System.out.println(num1 / num2);
-        System.out.println((double)num1 / num3);
+        double num1 = 27;
+        double num2 = 9;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        num1 = s.nextDouble();
+        System.out.print("Enter second number: ");
+        num2 = s.nextDouble();
+        System.out.println("The sum is " + (num1 + num2));
+        System.out.println("The difference is " + (num1 - num2));
+        System.out.println("The product is " + (num1 * num2));
     }
 }

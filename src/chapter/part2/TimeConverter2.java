@@ -5,12 +5,14 @@
  */
 package chapter.part2;
 
+import java.util.Scanner;
 /**
  *
  * @author briajbarn42
  */
-public class Lincoln {
+public class TimeConverter2 {
     public void doStuff() {
-        System.out.println("Lincoln said: \"Be the way you are!\"");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter seconds to convert: ");
     }
 }
